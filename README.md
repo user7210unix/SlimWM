@@ -40,9 +40,3 @@
 ```
 curl -fsSL https://raw.githubusercontent.com/user7210unix/SlimWM/main/install.sh | bash
 ```
-
-
-
-
-### :octocat: ‎ <sup><sub><samp>STILL EARLY IN DEVELOPMENT!</samp></sub></sup>
-
