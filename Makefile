@@ -11,6 +11,9 @@ all: slimwm
 slimwm: slimwm.o
 	$(CC) $(LDFLAGS) -O3 -o $@ $+ $(LDADD)
 
+slimwm.o: slimwm.c
+	$(CC) $(CFLAGS) -c slimwm.c
+
 install: all 
 	install -Dm 755 slimwm $(DESTDIR)$(BINDIR)/slimwm
 
