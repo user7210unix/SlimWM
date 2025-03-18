@@ -1,0 +1,42 @@
+# Launch Kitty with Super+T
+super + t
+    kitty
+
+# Kill focused window with Super+Q
+super + q
+    xkill
+
+# Quit WM with Super+Shift+P
+super + shift + p
+    pkill wind
+
+# Launch Rofi with Super+D
+super + d
+    rofi -show drun
+
+# Focus next window with Super+J
+super + j
+    xdotool key alt+Tab
+
+# Resize window left with Super+L
+super + l
+    xdotool getactivewindow windowsize --use-hints $(($(xdotool getactivewindow getwindowgeometry | grep Geometry | awk '{print $2}' | cut -d'x' -f1) - 20)) $(xdotool getactivewindow getwindowgeometry | grep Geometry | awk '{print $2}' | cut -d'x' -f2)
+
+# Resize window right with Super+K
+super + k
+    xdotool getactivewindow windowsize --use-hints $(($(xdotool getactivewindow getwindowgeometry | grep Geometry | awk '{print $2}' | cut -d'x' -f1) + 20)) $(xdotool getactivewindow getwindowgeometry | grep Geometry | awk '{print $2}' | cut -d'x' -f2)
+
+# Launch PCManFM with Super+E
+super + e
+    pcmanfm
+
+# Switch to virtual desktops with Super + 1..8
+super + {1-8}
+    ~/.config/sxhkd/switch_workspace.sh {1-8}
+
+# Move window to virtual desktop with Super + Shift + 1..8
+super + shift + {1-8}
+    ~/.config/sxhkd/move_to_workspace.sh {1-8}
+
+super + f
+    firefox
