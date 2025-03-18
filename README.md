@@ -41,7 +41,7 @@
   
 <div align="center">
 
-### 𝙄𝙣𝙨𝙩𝙖𝙡𝙡𝙖𝙩𝙞𝙤𝙣 🍃
+# 𝙄𝙣𝙨𝙩𝙖𝙡𝙡𝙖𝙩𝙞𝙤𝙣 🍃
 
 ```
 curl -fsSL https://raw.githubusercontent.com/user7210unix/SlimWM/main/install.sh | bash
