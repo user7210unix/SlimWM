@@ -18,8 +18,7 @@
 
  - Developed from Scratch ⚙️
  - Lightweight and Fast ⚡
- - uses sxhkd => a Simple X hotkey daemon 🍃
- - Cool outline style drag move ⚙️
+ - Cool outline style drag move 🍃
  - Readable code(kind of) ⚡
 
 
