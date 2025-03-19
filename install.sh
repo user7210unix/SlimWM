@@ -85,21 +85,6 @@ install_slimwm() {
 
     cd ~/SlimWM
 
-    # Check if sxhkd folder exists
-    if [ ! -d "sxhkd" ]; then
-        echo -e "${RED}[-] sxhkd folder not found in SlimWM repository. Skipping copy.${NC}"
-    else
-        echo -e "${BLUE}[*] Copying sxhkd configuration to ~/.config/...${NC}"
-        mkdir -p ~/.config
-        cp -r sxhkd ~/.config/
-        if [ $? -ne 0 ]; then
-            echo -e "${RED}[-] Failed to copy sxhkd folder to ~/.config/.${NC}"
-            exit 1
-        else
-            echo -e "${GREEN}[+] sxhkd configuration copied successfully.${NC}"
-        fi
-    fi
-
     # Build and install SlimWM
     echo -e "${BLUE}[*] Building and installing SlimWM...${NC}"
     make
