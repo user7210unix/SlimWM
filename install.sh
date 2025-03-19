@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install.sh for SlimWM - Installs dependencies, clones repo, copies sxhkd config, and builds/installs
+# install.sh for SlimWM - Installs dependencies, clones repo and builds/installs
 
 # Colors for output
 RED='\033[0;31m'
