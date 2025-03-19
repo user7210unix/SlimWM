@@ -37,17 +37,17 @@ install_deps() {
     case $DISTRO in
         "debian")
             sudo apt update
-            sudo apt install -y git gcc make libx11-dev libxext-dev sxhkd
+            sudo apt install -y git gcc make libx11-dev libxext-dev
             ;;
         "arch")
-            sudo pacman -Sy --noconfirm git base-devel libx11 libxext sxhkd
+            sudo pacman -Sy --noconfirm git base-devel libx11 libxext
             ;;
         "fedora")
-            sudo dnf install -y git gcc make libX11-devel libXext-devel sxhkd
+            sudo dnf install -y git gcc make libX11-devel libXext-devel
             ;;
         "gentoo")
             sudo emerge --sync
-            sudo emerge -av dev-vcs/git sys-devel/gcc sys-devel/make x11-libs/libX11 x11-libs/libXext x11-misc/sxhkd
+            sudo emerge -av dev-vcs/git sys-devel/gcc sys-devel/make x11-libs/libX11 x11-libs/libXext
             ;;
         "lfs")
             echo -e "${BLUE}[*] Linux From Scratch detected. Please manually install these dependencies:${NC}"
@@ -56,7 +56,6 @@ install_deps() {
             echo -e "${GREEN}  - make${NC}"
             echo -e "${GREEN}  - libX11 (X11 library)${NC}"
             echo -e "${GREEN}  - libXext (X11 extensions library)${NC}"
-            echo -e "${GREEN}  - sxhkd (Simple X Hotkey Daemon)${NC}"
             echo -e "${BLUE}[*] After installing these, re-run the script to continue.${NC}"
             exit 0
             ;;
