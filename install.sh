@@ -107,4 +107,3 @@ echo -e "${BLUE}[*] Starting SlimWM installation script...${NC}"
 install_deps
 install_slimwm
 echo -e "${GREEN}[+] Installation complete! You can now run 'slimwm' or configure your session to use it.${NC}"
-echo -e "${BLUE}[*] Ensure sxhkd is running (e.g., 'sxhkd &') for keybindings.${NC}"
