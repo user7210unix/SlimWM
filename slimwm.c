@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <unistd.h>
-#include <stdio.h>  // For debugging (can remove later)
+#include <stdio.h>
 
 #include "slimwm.h"
 #include "config.h"
